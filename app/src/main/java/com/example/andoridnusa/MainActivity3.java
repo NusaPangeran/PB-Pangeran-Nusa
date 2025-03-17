@@ -22,9 +22,8 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Sesuaikan dengan nama layout yang benar
+        setContentView(R.layout.activity_main);
 
-        // Inisialisasi FirebaseAuth
         mAuth = FirebaseAuth.getInstance();
 
         emailUser = findViewById(R.id.email);
@@ -57,6 +56,19 @@ public class MainActivity3 extends AppCompatActivity {
                             Toast.makeText(MainActivity3.this, "Login gagal, periksa email dan password!", Toast.LENGTH_SHORT).show();
                         }
                     });
+
+            mAuth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(getApplicationContext(), "Login berhasil", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                            finish();
+                        } else {
+                            String errorMessage = task.getException() != null ? task.getException().getMessage() : "Unknown error";
+                            Toast.makeText(MainActivity3.this, "Login gagal: " + errorMessage, Toast.LENGTH_LONG).show();
+                        }
+                    });
+
         });
     }
 }

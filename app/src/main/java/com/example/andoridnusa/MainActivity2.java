@@ -24,9 +24,8 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2); // Pastikan layout sudah diatur
+        setContentView(R.layout.activity_main2);
 
-        // Perbaikan: Inisialisasi semua komponen dengan ID yang benar
         iniButton = findViewById(R.id.iniButton);
         iniPennguna = findViewById(R.id.iniPengguna);
         iniSandi = findViewById(R.id.iniSandi);
@@ -70,7 +69,6 @@ public class MainActivity2 extends AppCompatActivity {
     private void registerUser(String username, String password, String NIM, String email) {
         FirebaseAuth auth = FirebaseAuth.getInstance();
 
-        // Perbaikan: email harus jadi parameter pertama
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(MainActivity2.this, task -> {
             if (task.isSuccessful()) {
                 FirebaseUser fUser = auth.getCurrentUser();
