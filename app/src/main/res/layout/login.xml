@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF4C2"
+    android:layout_margin="30dp">
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:text="Silahkan login terlebih Dahulu"
+        android:textStyle="bold"
+        android:textSize="11pt"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/tv_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama pengguna"
+        android:textStyle="bold"
+        android:textSize="10pt">
+    </TextView>
+
+    <EditText
+        android:id="@+id/tv_input"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:hint="Masukkan nama pengguna"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp">
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/tv_sandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kata sandi"
+        android:textSize="10pt"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/tv_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Masukkan kata sandi"
+        >
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/tv_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:text="Ingat Saya">
+    </CheckBox>
+
+    <Button
+        android:id="@+id/tv_tombol"
+        android:textSize="10pt"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#158"
+        android:layout_marginBottom="8dp">
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lupa kata sandi Anda?"
+        android:textSize="8pt"
+        android:textColor="#158"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+    </TextView>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Belum punya akun?"
+        android:textStyle="bold"
+        android:textSize="8pt">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Daftar Sekarang"
+        android:textStyle="bold"
+        android:textColor="#158"
+        android:textSize="8pt">
+    </TextView>
+
+</LinearLayout>
+
+</LinearLayout>
