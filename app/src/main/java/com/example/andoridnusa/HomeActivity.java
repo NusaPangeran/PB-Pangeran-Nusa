@@ -66,4 +66,9 @@ public class HomeActivity extends AppCompatActivity {
             return insets;
         });
     }
+    public void openProfile(android.view.View view) {
+        Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
 }
