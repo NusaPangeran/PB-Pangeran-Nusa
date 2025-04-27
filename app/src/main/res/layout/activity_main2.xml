@@ -117,6 +117,14 @@
             android:text="Sign Up"
             android:backgroundTint="#187"/>
 
+        <Button
+            android:id="@+id/iniButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Login"
+            android:backgroundTint="#067"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

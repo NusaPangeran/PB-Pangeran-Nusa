@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Tugas" />
+
+    <EditText
+        android:id="@+id/etTaskDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deadline"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnPickDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Tanggal &amp; Waktu"
+        android:textColor="#ffffff"
+        android:backgroundTint="#162676"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:backgroundTint="#162676"
+        android:textColor="#ffffff"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
